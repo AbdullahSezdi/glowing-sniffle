@@ -1,0 +1,247 @@
+@import "./variables.scss";
+
+.Admin {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ededed;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  color: #05153f;
+
+  .admin-content {
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 2vw 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.header.kantin {
+  padding: 10px 20px;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #05153f30;
+}
+
+.navbar {
+  &.admin {
+    position: sticky;
+    left: 0;
+    top: 0;
+    padding: 30px 15px;
+    display: flex;
+    width: 25vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-right: 1px solid #05153f30;
+    z-index: 999;
+
+    .nav-menu-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+      justify-content: center;
+      width: 100%;
+
+      .nav-menu-item {
+        cursor: pointer;
+        user-select: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 20px;
+        color: #05153f;
+        font-size: 1em;
+        font-weight: 500;
+        border-radius: 10px;
+        transition: 300ms;
+        width: 100%;
+
+        &:hover {
+          background-color: #f7f7f7;
+        }
+
+        &.active {
+          color: #fff;
+          background-color: #25d24b;
+          border-radius: 5px;
+
+          svg {
+            stroke: #fff;
+          }
+        }
+
+        &.logout:hover {
+          color: #ee1313;
+          background-color: #ffdddd;
+
+          svg {
+            stroke: #ee1313
+          }
+        }
+
+        &.go-back:hover {
+          color: #25d24b;
+          background-color: #ebffef;
+
+          svg {
+            stroke: #25d24b
+          }
+        }
+      }
+
+    }
+  }
+
+  &.kantin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+
+    .nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+
+      &.mobile {
+        display: none;
+
+        svg {
+          cursor: pointer;
+
+          &:hover {
+            stroke: #25d24b;
+          }
+        }
+
+        .mobile-nav {
+          padding: 10px 20px;
+          gap: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          background-color: #fff;
+          position: absolute;
+          top: 105%;
+          width: 100vw;
+          z-index: 55;
+          left: 0;
+          animation: slide-in-top 500ms;
+
+          a {
+            width: 100%;
+          }
+
+          a:hover {
+            background-color: #f7f7f7;
+          }
+        }
+      }
+
+      .nav-page-link {
+        color: #05153f;
+        cursor: pointer;
+        -webkit-user-select: none;
+        user-select: none;
+        padding: 6px 12px;
+        display: flex;
+        font-weight: 500;
+        align-items: center;
+        justify-content: center;
+        transition: 250ms;
+        border-radius: 5px;
+
+
+        &.active {
+          color: $sheen-green;
+          font-weight: 600;
+        }
+
+        &:hover {
+          color: $sheen-green;
+          background-color: #f7f7f7;
+        }
+      }
+    }
+
+    .account-nav {
+      padding: 5px;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+
+      .account-page-link {
+        cursor: pointer;
+        display: flex;
+        gap: 5px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        font-weight: 400;
+        border-radius: 5px;
+        position: relative;
+        transition: 250ms;
+        position: relative;
+
+        svg {
+          stroke: #05153f;
+          size: 1.25rem;
+        }
+
+        &.active {
+          svg {
+            stroke: #25d24b;
+          }
+        }
+
+        &:hover {
+          svg {
+            stroke: #25d24b;
+          }
+        }
+
+        &.admin {
+          svg:nth-child(1) {
+            stroke: #05153f;
+            display: block;
+          }
+
+          svg:nth-child(2) {
+            display: none;
+          }
+
+          &:hover {
+            svg:nth-child(1) {
+              display: none;
+            }
+
+            svg:nth-child(2) {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

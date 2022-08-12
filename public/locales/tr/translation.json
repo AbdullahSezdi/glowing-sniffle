@@ -1,0 +1,147 @@
+{
+  "components": {
+    "dropdown": {
+      "select_user_room": {
+        "place_holder": "Seçiniz"
+      }
+    },
+    "msg": {
+      "approve_basket": {
+        "title": "Siparişiniz Gönderildi!",
+        "desc": "Siparişiniz alındı, en kısa sürede bilgilendirileceksiniz.",
+        "btn_text": "Alışverişe devam et"
+      },
+      "empty_basket": {
+        "title": "Sepetinizde ürünü bulunamadı!",
+        "desc": "Sepetinize ürün eklemek için ürünü sayfasına geçin.",
+        "btn_text": "Ürünleri görüntüle"
+      }
+    }
+  },
+  "welcome_page": {
+    "main_title": "Baum Kantin'e Hoşgeldiniz!",
+    "main_desc": "Kantine erişim sağlamak için giriş yapabilir, hesabınız yoksa kayıt olabilirsiniz.",
+    "btn_group": {
+      "register_btn": "Kayıt ol",
+      "login_btn": "Giriş yap"
+    }
+  },
+  "error_pages": {
+    "404": {
+      "error_code": "404",
+      "error_msg": "Aradığınız sayfayı bulamadık, silinmiş yada kaldırılmış olabilir."
+    },
+    "401": {
+      "error_code": "401",
+      "error_msg": "Bu sayfaya erişim yetkiniz bulunmamakta! Lütfen anasayfaya dönün."
+    },
+    "back_home_msg": "Ana sayfaya dönmek için tıklat!"
+  },
+  "register_page": {},
+  "login_page": {},
+  "kantin": {
+    "navbar": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "order_history": "Sipariş Geçmişi",
+      "debt_information": "Borç Bilgileri"
+    },
+    "home_page": {},
+    "products_page": {},
+    "order_history": {},
+    "debt_information": {},
+    "basket": {
+      "table": {
+        "thead": {
+          "product": "Ürün",
+          "product_name": "İsmi",
+          "product_payer": "Ödemeyi Yapan",
+          "product_quantity": "Ürün Adeti"
+        }
+      },
+      "place_holder": {
+        "add_order_note": "Sipariş için not ekleyin."
+      },
+      "btn": {
+        "checkout_basket": "Sepeti Onayla",
+        "clear_basket": "Sepeti Temizle"
+      },
+      "total": "Toplam",
+      "quantity": "Adet",
+      "title": {
+        "selected_room": "Seçilen Oda",
+        "products_in_basket": "Sepetteki Ürünler",
+        "order_note": "Sipariş Notu",
+        "order_overview": "Sipariş Özeti"
+      }
+    }
+  },
+  "admin": {
+    "navbar": {
+      "home": "Ana Sayfa",
+      "users": "Kullanıcılar",
+      "products": "Ürünler",
+      "incoming_orders": "Gelen Siparişler",
+      "user_debt_list": "Borç Bilgileri",
+      "go_back": "Kantine geri dön",
+      "logout": "Çıkış yap"
+    },
+    "home_page": {},
+    "users_page": {
+      "pending_users": {
+        "title": "Bekleyen Kullanıcılar",
+        "table_is_empty": "Bekleyen kullanıcı bulunamadı!",
+        "table": {
+          "thead": {
+            "username": "Ad Soyad",
+            "email": "E-Posta",
+            "room_name": "Oda Numarası",
+            "action": "Etkileşim"
+          },
+          "tbody": {
+            "btn_group": {
+              "reject_btn": "Yoksay",
+              "approve_btn": "Onayla"
+            }
+          }
+        }
+      },
+      "active_users": {
+        "title": "Aktif Kullanıcılar",
+        "table_is_empty": "Aktif kullanıcı bulunamadı!",
+        "table": {
+          "thead": {
+            "username": "Ad Soyad",
+            "email": "E-Posta",
+            "room_name": "Oda Numarası",
+            "action": "Etkileşim"
+          },
+          "tbody": {
+            "btn_group": {
+              "remove_btn": "Kaldır"
+            }
+          }
+        }
+      }
+    },
+    "products-page": {},
+    "incoming-orders-page": {},
+    "user_debts": {
+      "title": "Kullanıcılar Borç Tablosu",
+      "table_is_empty": "Kullanıcılar Bulunamadı!",
+      "table": {
+        "thead": {
+          "username": "Ad Soyad",
+          "phone": "Sabit Hat Numarası",
+          "room_name": "Bulunduğu Oda",
+          "debt_status": "Borç Durumu"
+        },
+        "tbody": {
+          "buttons": {
+            "clear_debt_btn": "Sıfırla"
+          }
+        }
+      }
+    }
+  }
+}

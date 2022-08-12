@@ -1,0 +1,149 @@
+.approve-order-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25em;
+  font-weight: 500;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #25d24b;
+  text-align: center;
+
+  &:hover {
+    background-color: #27b045;
+  }
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+}
+
+.btn {
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 0;
+  border: 0;
+  color: #fff;
+  background-color: #25d24b;
+  border-radius: 5px;
+  width: 100%;
+
+  &.print {
+    padding: 5px;
+    background-color: #f7f7f7;
+    border: 1px solid #05153f30;
+    transition: 500ms;
+    border-radius: 5px;
+    
+    svg {
+      stroke: #05153f;
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+
+    &:hover {
+      transform: translateY(2px);
+      background-color: #fff;
+    }
+  }
+
+  &.reject {
+    color: #bb281e;
+    background-color: #ffd4d3;
+
+    &:hover {
+      color: #fff;
+      background-color: #e73232;
+    }
+  }
+
+  &.delete {
+    color: #c73025;
+    background-color: #ffe5e4;
+
+    &:hover {
+      color: #fff;
+      background-color: #d23030;
+    }
+  }
+
+  &.approve {
+    color: #0a9b49;
+    background-color: #e0ffed;
+
+    &:hover {
+      color: #fff;
+      background-color: #27be69;
+    }
+  }
+
+  &:hover {
+    background-color: #22b843;
+  }
+
+  &.small {
+    padding: 5px 10px;
+    font-size: 1rem;
+  }
+
+  &.normal {
+    padding: 10px 20px;
+    font-size: 1.15rem;
+  }
+
+  &.large {
+    padding: 15px 20px;
+    font-size: 1.25rem;
+  }
+
+  &.link {
+    color: #05153f;
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+      text-decoration: 1px solid underline;
+    }
+  }
+}
+
+.switch-tab-group {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.05em;
+  justify-content: left;
+  align-items: center;
+
+  .tab-btn {
+    cursor: pointer;
+    user-select: none;
+    padding: 10px 20px;
+    height: 100%;
+    background-color: #fff;
+    transition: 250ms;
+    border: 1px solid #05153f30;
+
+    &:first-of-type {
+      border-radius: 2px 0 0 2px;
+    }
+
+    &:last-of-type {
+      border-radius: 0 2px 2px 0;
+    }
+
+    &.active {
+      color: #fff;
+      background-color: #25d24b;
+    }
+  }
+}

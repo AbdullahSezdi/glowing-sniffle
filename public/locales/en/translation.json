@@ -1,0 +1,147 @@
+{
+  "components": {
+    "dropdown": {
+      "select_user_room": {
+        "place_holder": "Select"
+      }
+    },
+    "msg": {
+      "approve_basket": {
+        "title": "Your order is sent!",
+        "desc": "Your order have been received, you will be informed as soon as possible.",
+        "btn_text": "Continue Shopping"
+      },
+      "empty_basket": {
+        "title": "We couldn't find any item on your basket!",
+        "desc": "If you wanna add some item to basket, view products page.",
+        "btn_text": "View Products"
+      }
+    }
+  },
+  "welcome_page": {
+    "main_title": "Welcome to BAUM Kantin!",
+    "main_desc": "You can login or register for provide access to Kantin.",
+    "btn_group": {
+      "register_btn": "Register",
+      "login_btn": "Login"
+    }
+  },
+  "error_pages": {
+    "404": {
+      "error_code": "404",
+      "error_msg": "We couldn't find the page you are looking for, it may have been removed or deleted."
+    },
+    "401": {
+      "error_code": "401",
+      "error_msg": "Access denied for this page! Please return home page."
+    },
+    "back_home_msg": "Click for return home page."
+  },
+  "register_page": {},
+  "login_page": {},
+  "kantin": {
+    "navbar": {
+      "home": "Home",
+      "products": "Products",
+      "order_history": "Order History",
+      "debt_information": "Debt Information"
+    },
+    "home_page": {},
+    "products_page": {},
+    "order_history": {},
+    "debt_information": {},
+    "basket": {
+      "table": {
+        "thead": {
+          "product": "Product",
+          "product_name": "Name",
+          "product_payer": "Payer",
+          "product_quantity": "Quantity"
+        }
+      },
+      "place_holder": {
+        "add_order_note": "Add note for order."
+      },
+      "btn": {
+        "checkout_basket": "Approve Basket",
+        "clear_basket": "Clear Basket"
+      },
+      "total": "Total",
+      "quantity": "Piece",
+      "title": {
+        "selected_room": "Selected Room",
+        "products_in_basket": "Products in Basket",
+        "order_note": "Order Note",
+        "order_overview": "Order Overview"
+      }
+    }
+  },
+  "admin": {
+    "navbar": {
+      "home": "Home",
+      "users": "Users",
+      "products": "Products",
+      "incoming_orders": "Incoming Orders",
+      "user_debt_list": "User Debt List",
+      "go_back": "Go back to Kantin",
+      "logout": "Logout"
+    },
+    "home_page": {},
+    "users_page": {
+      "pending_users": {
+        "title": "Pending Users",
+        "table_is_empty": "Can't find any pending user!",
+        "table": {
+          "thead": {
+            "username": "Name Surname",
+            "email": "E-Mail",
+            "room_name": "Room Name",
+            "action": "Action"
+          },
+          "tbody": {
+            "btn_group": {
+              "reject_btn": "Reject",
+              "approve_btn": "Approve"
+            }
+          }
+        }
+      },
+      "active_users": {
+        "title": "Active Users",
+        "table_is_empty": "Can't find any active user!",
+        "table": {
+          "thead": {
+            "username": "Name Surname",
+            "email": "E-Mail",
+            "room_name": "Room Name",
+            "action": "Action"
+          },
+          "tbody": {
+            "btn_group": {
+              "remove_btn": "Remove"
+            }
+          }
+        }
+      }
+    },
+    "products-page": {},
+    "incoming-orders-page": {},
+    "user_debts": {
+      "title": "User Debt Table",
+      "table_is_empty": "Can't find any user!",
+      "table": {
+        "thead": {
+          "username": "Name Surname",
+          "phone": "Phone Number",
+          "room_name": "Room Name",
+          "debt_status": "Debt Status"
+        },
+        "tbody": {
+          "buttons": {
+            "clear_debt_btn": "Reset"
+          }
+        }
+      }
+    }
+  }
+}

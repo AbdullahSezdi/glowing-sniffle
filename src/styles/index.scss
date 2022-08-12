@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+@import "./navbars.scss";
+@import "./tables.scss";
+@import "./buttons.scss";
+@import "./dropdowns.scss";
+@import "./medias.scss";
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  color: #21222b;
+}
+
+.msg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  width: 100%;
+}
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f7f7f7;
+
+  .error-404,
+  .error-401 {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+
+    &>.error-code {
+      color: #25d24b;
+      font-size: 6em;
+      font-weight: 700;
+      letter-spacing: 20px;
+      text-align: center;
+    }
+
+    &>.error-desc {
+      color: #05153f;
+      font-weight: 400;
+      font-size: 1.15em;
+    }
+
+    &>.go-back-home {
+      cursor: pointer;
+      outline: 0;
+      border: 0;
+      font-size: 1em;
+      font-weight: 400;
+
+      &>a {
+        color: #676767;
+        text-decoration: none;
+
+        &:hover {
+          color: #25d24b;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+
+.Kantin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  background-color: #e9e9e9;
+}
+
+.current-language {
+  user-select: none;
+  padding-left: 10px;
+  border-left: 1px solid #05153f20;
+  cursor: pointer;
+  color: #05153f;
+  right: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 1.15rem;
+}
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+  .navbar.kantin .nav.mobile {
+    display: flex;
+  }
+
+  .navbar.kantin .nav.mobile .mobile-nav {
+    gap: 0;
+  }
+
+  .navbar.kantin .nav .nav-page-link {
+    padding: 15px 10px;
+  }
+
+  .Kantin .cart-page {
+    flex-direction: column;
+  }
+
+  .Kantin .cart-page .order-overview {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .Kantin {
+    font-size: 14px;
+  }
+}
+
+
+.order-history-list {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 1024px;
+  padding: 10px 20px;
+}

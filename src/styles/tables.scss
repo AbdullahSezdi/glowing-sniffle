@@ -1,0 +1,178 @@
+.table-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.75em;
+
+  .count-label {
+    color: #25d24b;
+    font-weight: 500;
+  }
+}
+
+.table-is-empty {
+  margin: 10px 0 20px 0;
+  padding: 10px 20px;
+  color: #05153f;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  background-color: #f7f7f7;
+  border: 1px solid #05153f30;
+}
+
+.table {
+  margin: 10px 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 2px;
+  background: #fff;
+  border-left: 1px solid #05153f30;
+  border-right: 1px solid #05153f30;
+  border-top: 1px solid #05153f30;
+  width: 100%;
+
+  thead {
+    td {
+      position: relative;
+      color: #05153f;
+      font-size: 0.85em;
+      font-weight: 600;
+      background: #f7f7f7;
+
+      &:active {
+        background-color: #ececec;
+
+        & .sort-icon {
+          opacity: 1;
+        }
+      }
+
+      &.user-info {
+        width: 40%;
+      }
+
+      &.user-mail {
+        width: 35%;
+      }
+
+      &.user-room {
+        width: 15%;
+      }
+
+      &.action-user {
+        width: 10%;
+      }
+
+    }
+  }
+
+  thead, tbody {
+    td {
+      padding: 10px 10px;
+      vertical-align: middle;
+      border-bottom: 1px solid #05153f30;
+
+      &:first-of-type {
+        padding-left: 25px;
+      }
+
+      &:last-of-type {
+        padding-right: 25px;
+      }
+    }
+  }
+}
+
+.user-debt-table {
+  margin-top: 20px;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  border-top: 1px solid #05153f50;
+  border-right: 1px solid #05153f50;
+  border-left: 1px solid #05153f50;
+  background-color: transparent;
+  border-radius: 5px 5px 0 0;
+
+  .user-debt {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  thead {
+    td {
+      vertical-align: middle;
+      padding: 10px;
+      color: #05153f;
+      background-color: #e3e2e4;
+      border-right: 1px solid #05153f50;
+      border-bottom: 1px solid #05153f50;
+      font-weight: 600;
+      font-size: 1em;
+      
+
+      &:first-of-type {
+        border-radius: 5px 0 0 0;
+      }
+      &:last-of-type {
+        border-right: 0;
+        border-radius: 0 5px 0 0;
+      }
+    }
+  }
+
+  tbody {
+    tr:nth-child(2n){
+      td {
+        background-color: #f3f1f3;
+      }
+    }
+
+    td {
+      position: relative;
+      background-color: #fff;
+      border-bottom: 1px solid #05153f50;
+      border-right: 1px solid #05153f50;
+      vertical-align: middle;
+      padding: 10px 10px;
+
+      &:first-of-type {
+        border-left: 0;
+      }
+
+      &:last-of-type {
+        border-right: 0;
+      }
+    }
+  }
+}
+
+.basket-product-list {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  width: 100%;
+  border-collapse:separate;
+  border-spacing:0 5px;
+
+  thead {
+    td {
+      color: #5a5a5a;
+      font-weight: 500;
+    }
+  }
+
+  thead, tbody {
+    td {
+      vertical-align: left;
+    }
+  }
+
+  .product-price {
+    text-align: right;
+    font-weight: 600;
+  }
+}
